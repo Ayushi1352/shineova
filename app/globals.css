@@ -1,26 +1,89 @@
-@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+  --font-primary: Arial, sans-serif;
+  --font-heading: Arial, sans-serif;
+  --font-display: Georgia, serif;
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+  /* Shineova theme */
+  /* Navy (the logo's house and "Shine", every title) */
+  --color-primary: #0a1f52;
+  --color-primary-dark: #061a3f;
+  --color-primary-soft: #0d2a6b;
+  --color-primary-strong: #1a2547;
+  /* Green (the logo's sparkles and "ova", buttons and highlights) */
+  --color-green: #3f9a0e;
+  --color-green-dark: #2f7d07;
+  --color-green-deep: #378a0a;
+  --color-green-bright: #4caf16;
+  --color-green-button: #45a012;
+  --color-green-accent-from: #6fc229;
+  --color-green-accent-to: #3e900a;
+  --color-green-line: #78bb4c;
+  --color-green-border: #7cc142;
+  --color-green-ring: #b5df86;
+  --color-green-chip-border: #d3ebbb;
+  /* Pale green and blue icon backgrounds */
+  --color-green-light: #e9f6db;
+  --color-green-soft: #e8f5da;
+  --color-green-pale: #eef7e4;
+  --color-green-quote: #e2f4ce;
+  --color-green-tint-from: #f2fbe9;
+  --color-green-tint-to: #e1f4cf;
+  --color-green-halo-from: #ecf9df;
+  --color-green-halo-to: #d6f0bd;
+  --color-green-ring-soft: #e9f5db;
+  --color-blue-icon: #1d5fa8;
+  --color-blue-tint-from: #eef8ff;
+  --color-blue-tint-to: #d9effd;
+  --color-blue-halo-from: #e4f7fd;
+  --color-blue-halo-to: #c6ebfa;
+  --color-sparkle: #4aa3f0;
+  /* Experience badge, stars, footer */
+  --color-badge-from: #02426b;
+  --color-badge-to: #012e52;
+  --color-star: #fab002;
+  --color-footer: #044425;
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
+  /* Text */
+  --color-text: #1f2a44;
+  --color-text-muted: #3b4459;
+  --color-text-soft: #4a5368;
+  --color-text-quiet: #8d93a1;
+  --color-white: #ffffff;
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  /* Backgrounds and borders */
+  --color-bg-main: #ffffff;
+  --color-bg-hero-top: #f4f8fe;
+  --color-bg-hero-bottom: #e3eefa;
+  --color-bg-contact: #f6f8f9;
+  --color-bg-form-edge: #eef3ea;
+  --color-bg-form-edge-mid: #e6f1dc;
+  /* Shown on both sides of the page when the screen is wider than 1920px (or the browser is zoomed out). */
+  --color-bg-backdrop: #eef2f6;
+  --color-border: #d9dee7;
+  --color-border-light: #e3e6ea;
+  --color-border-field: #cfd5dd;
+  --color-divider: #dfe4ec;
+  --color-dot: #d3d6dc;
+
+  /* Overlays */
+  --color-primary-50: rgba(6, 26, 63, 0.5);
+  --color-green-15: rgba(63, 154, 14, 0.15);
+  --color-white-40: rgba(255, 255, 255, 0.4);
+  --color-white-80: rgba(255, 255, 255, 0.8);
+  --color-white-90: rgba(255, 255, 255, 0.9);
+  --color-white-95: rgba(255, 255, 255, 0.95);
+
+  /* Shadows */
+  --color-shadow-header: rgba(10, 31, 82, 0.08);
+  --color-shadow-photo: rgba(10, 31, 82, 0.16);
+  --color-shadow-card: rgba(10, 31, 82, 0.1);
+  --color-shadow-soft: rgba(10, 31, 82, 0.08);
+  --color-shadow-button: rgba(10, 31, 82, 0.14);
+  --color-shadow-green: rgba(76, 159, 31, 0.12);
+  --color-shadow-green-button: rgba(55, 138, 10, 0.3);
+  --color-shadow-badge: rgba(1, 46, 82, 0.3);
 }
