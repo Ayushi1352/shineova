@@ -180,7 +180,7 @@
                 {
                   "id": "years-of-experience",
                   "icon": "LuCalendarCheck",
-                  "value": 20,
+                  "value": 10,
                   "suffix": "+",
                   "label": "Years of Experience",
                   "tone": "green"
@@ -238,7 +238,7 @@
                 {
                   "id": "commercial-cleaning",
                   "title": "Commercial\nCleaning",
-                  "description": "We provide daily, weekly, and monthly\ncommercial cleaning solutions tailored to\nfacility’s size and schedule. From lobbies to\nrestrooms and office spaces.",
+                  "description": "We provide daily, weekly, and monthly\ncommercial cleaning solutions tailored to\nyour facility’s size and schedule. From lobbies to\nrestrooms and office spaces.",
                   "tags": [
                     {
                       "id": "office",

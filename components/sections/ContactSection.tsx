@@ -67,8 +67,8 @@ export const ContactSection = ({ data, form, company, serviceOptions }: Props) =
           </ul>
 
           {/* desktop: the supplies photo stands between the details and the form, fading into the background */}
-          <div aria-hidden="true" className="absolute bottom-0 left-[22rem] hidden size-[26.5rem] [mask-image:radial-gradient(ellipse_70%_75%_at_55%_60%,black_55%,transparent_100%)] lg:block">
-            <Image src={data.image} alt="" fill quality={90} sizes="34vw" className="object-cover object-bottom" />
+          <div className="absolute bottom-0 left-[22rem] hidden size-[26.5rem] [mask-image:radial-gradient(ellipse_70%_75%_at_55%_60%,black_55%,transparent_100%)] lg:block">
+            <Image src={data.image} alt={data.imageAlt} fill quality={90} sizes="34vw" className="object-cover object-bottom" />
           </div>
 
           <div

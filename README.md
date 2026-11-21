@@ -1,36 +1,40 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Shineova Landing Page
 
-## Getting Started
+One-page landing page for **Shineova** (professional home cleaning services), built with Next.js 16, React 19 and Tailwind CSS 3 to match the supplied design. It follows the same project structure as the other landing pages (Haulix, Constrix, Men's Salon): every piece of text, image and link lives in `data/templates.json`, and the components only render it.
 
-First, run the development server:
+## Getting started
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Structure
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```
+app/
+  layout.tsx            fonts, metadata, header, footer, scroll reveal
+  page.tsx              the sections in page order
+  globals.css           theme colours (CSS variables)
+components/
+  common/               Header (call button and dropdown menu on every screen), Footer
+  sections/             Hero, About, Services, Why Choose Us, How It Works, Testimonials (slider),
+                        Contact (+ contact form)
+  ui/                   Icon, Eyebrow, LineArt, CountUp, ScrollReveal, FormSuccess, useDummySubmit, useActiveSection,
+                        buttonStyles, sectionSpace
+data/templates.json     all content (sections and their variants)
+types/templates.types.ts
+public/images/          photos (cut from the design), logo and favicon
+```
 
-## Learn More
+Each section's `id` in `templates.json` matches a menu link (`#about` → `id="about"`). The form's service list is built from the Services section's titles.
 
-To learn more about Next.js, take a look at the following resources:
+## Responsive
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Designed for phones, tablets, 1024px and desktop. From 1024px up the root font size follows the 1440px design (`1rem = 100vw / 90`, at most 16px), so 1024px shows exactly the 1440px layout, only smaller.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Forms
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+The contact form uses a dummy submit (`useDummySubmit`): it shows a sending state and a thank-you message in place of the button, but nothing is sent anywhere yet.

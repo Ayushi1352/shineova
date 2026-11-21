@@ -68,7 +68,7 @@ export const Header = ({ data, company }: { data?: HeaderData; company: CompanyD
           {call && (
             <a href={call.url} aria-label={`${data.callLabel} ${call.lines.join(" ")}`} className="group relative flex items-center">
               <span className="relative z-10 grid size-10 place-items-center rounded-full border-[0.1875rem] border-[var(--color-green)] bg-[var(--color-primary)] text-[var(--color-white)] transition-colors group-hover:bg-[var(--color-green)] sm:mt-2 sm:size-11 lg:mt-[0.85rem] lg:size-[3.1rem]">
-                <Icon name="FaPhoneAlt" className="size-[1.125rem] lg:size-[1.6rem]" />
+                <Icon name={call.icon} className="size-[1.125rem] lg:size-[1.6rem]" />
               </span>
               <span className="relative -ml-4 hidden sm:block lg:-ml-[1.1rem]">
                 <span className="absolute -top-[1.05rem] left-5 rounded-t-[0.4rem] bg-[var(--color-green)] px-2 pb-[0.35rem] pt-[0.3rem] font-heading text-[0.7rem] font-extrabold uppercase leading-none tracking-wide text-[var(--color-white)] lg:-top-[1.2rem] lg:left-[1.4rem] lg:px-[0.55rem] lg:text-[0.8rem]">
@@ -139,7 +139,7 @@ export const Header = ({ data, company }: { data?: HeaderData; company: CompanyD
                   tabIndex={open ? undefined : -1}
                   className={`${buttonClass} h-12 w-full gap-3`}
                 >
-                  <Icon name="FaPhoneAlt" className="size-4" />
+                  <Icon name={call.icon} className="size-4" />
                   {call.lines.join(" ")}
                 </a>
               </li>
