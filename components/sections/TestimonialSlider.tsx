@@ -65,7 +65,7 @@ export const TestimonialSlider = ({ data }: { data: TestimonialsData }) => {
             </span>
             {/* the review's line breaks (\n in the JSON) are kept from 1024px up */}
             <p className="mt-4 font-heading text-lg font-semibold italic leading-[1.5] text-[var(--color-primary-dark)] sm:text-xl lg:mt-[0.6rem] lg:whitespace-pre-line lg:pl-[1.4rem] lg:text-[1.68rem] lg:leading-[1.4]">
-              “{item.quote}”
+              {item.quote}
             </p>
             <span aria-hidden="true" className="mt-5 block h-[0.1875rem] w-20 bg-[var(--color-green)] lg:ml-[1.4rem] lg:mt-[1.6rem] lg:w-[6.3rem]" />
             <footer className="mt-5 flex items-center lg:mt-[1.5rem] lg:pl-[1.4rem]">

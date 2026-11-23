@@ -11,7 +11,6 @@ export interface ThemeData {
 export interface SiteMetadataData {
   title: string;
   description: string;
-  icon: string;
   lang: string;
 }
 
@@ -207,7 +206,7 @@ export interface FormField {
   icon: string;
 }
 
-export interface ContactFormData {
+export interface EnquiryFormData {
   fields: {
     name: FormField;
     email: FormField;
@@ -249,7 +248,7 @@ export interface ShineovaTemplateData {
         Process?: Variants<ProcessData>;
         Testimonials?: Variants<TestimonialsData>;
         Contact?: Variants<ContactData>;
-        ContactForm?: Variants<ContactFormData>;
+        EnquiryForm?: Variants<EnquiryFormData>;
       };
       templateComponents: {
         [template: string]: {

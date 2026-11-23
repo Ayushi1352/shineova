@@ -10,7 +10,6 @@
     "metadata": {
       "title": "Shineova | Professional Home Cleaning Services",
       "description": "Reliable and hassle-free home cleaning services for a spotless, hygienic and more comfortable living space.",
-      "icon": "/images/favicon.png",
       "lang": "en"
     },
     "company": {
@@ -484,21 +483,21 @@
                   "id": "neha-verma",
                   "name": "Neha Verma",
                   "role": "Working Professional",
-                  "quote": "Booking was quick and the team was on time.\nEvery corner of my apartment was spotless.\nThe whole place smells fresh and clean.\nI’ll definitely book again!",
+                  "quote": "“Booking was quick and the team was on time.\nEvery corner of my apartment was spotless.\nThe whole place smells fresh and clean.\nI’ll definitely book again!”",
                   "image": "/images/testimonial-neha.webp"
                 },
                 {
                   "id": "priya-sharma",
                   "name": "Priya Sharma",
                   "role": "Homeowner",
-                  "quote": "The cleaning team did a fantastic job!\nThey were punctual, polite, and very thorough.\nMy home looks spotless and feels so fresh.\nHighly recommended!",
+                  "quote": "“The cleaning team did a fantastic job!\nThey were punctual, polite, and very thorough.\nMy home looks spotless and feels so fresh.\nHighly recommended!”",
                   "image": "/images/testimonial-priya.webp"
                 },
                 {
                   "id": "anjali-mehta",
                   "name": "Anjali Mehta",
                   "role": "Office Manager",
-                  "quote": "Shineova keeps our office fresh every week.\nThe staff is professional and always on time.\nThey use eco-friendly products we trust.\nGreat attention to detail!",
+                  "quote": "“Shineova keeps our office fresh every week.\nThe staff is professional and always on time.\nThey use eco-friendly products we trust.\nGreat attention to detail!”",
                   "image": "/images/testimonial-anjali.webp"
                 }
               ]
@@ -520,9 +519,9 @@
             }
           }
         },
-        "ContactForm": {
+        "EnquiryForm": {
           "variants": {
-            "CleaningContactForm1": {
+            "CleaningEnquiryForm1": {
               "fields": {
                 "name": {
                   "placeholder": "Your Name *",

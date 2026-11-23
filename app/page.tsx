@@ -30,7 +30,7 @@ export default function Home() {
       <TestimonialsSection data={sectionData.Testimonials?.variants?.CleaningTestimonials1} />
       <ContactSection
         data={sectionData.Contact?.variants?.CleaningContact1}
-        form={sectionData.ContactForm?.variants?.CleaningContactForm1}
+        form={sectionData.EnquiryForm?.variants?.CleaningEnquiryForm1}
         company={commonData.company}
         serviceOptions={serviceOptions}
       />

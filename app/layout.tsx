@@ -26,11 +26,6 @@ const fontVariables = {
 export const metadata: Metadata = {
   title: commonData.metadata.title,
   description: commonData.metadata.description,
-  icons: {
-    icon: commonData.metadata.icon,
-    shortcut: commonData.metadata.icon,
-    apple: commonData.metadata.icon,
-  },
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {

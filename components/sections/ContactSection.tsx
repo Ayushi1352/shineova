@@ -1,13 +1,13 @@
 import Image from "next/image";
-import type { CompanyData, ContactData, ContactFormData } from "@/types/templates.types";
-import { ContactForm } from "@/components/sections/ContactForm";
+import type { CompanyData, ContactData, EnquiryFormData } from "@/types/templates.types";
+import { EnquiryForm } from "@/components/sections/EnquiryForm";
 import { Eyebrow, labelSize, titleSize } from "@/components/ui/SectionHeading";
 import { sectionSpace } from "@/components/ui/sectionSpace";
 import { Icon } from "@/components/ui/Icon";
 
 type Props = {
   data?: ContactData;
-  form?: ContactFormData;
+  form?: EnquiryFormData;
   company: CompanyData;
   /** choices of the form's service list (built in app/page.tsx from the Services section) */
   serviceOptions: string[];
@@ -77,7 +77,7 @@ export const ContactSection = ({ data, form, company, serviceOptions }: Props) =
           >
             <h3 className="font-heading text-2xl font-extrabold leading-tight text-[var(--color-primary-dark)] lg:text-[1.9rem]">{data.formTitle}</h3>
             <span aria-hidden="true" className="mt-2 block h-1 w-16 rounded-full bg-[var(--color-green)] lg:mt-[0.55rem] lg:w-[4.3rem]" />
-            <ContactForm data={form} serviceOptions={serviceOptions} />
+            <EnquiryForm data={form} serviceOptions={serviceOptions} />
           </div>
         </div>
       </div>

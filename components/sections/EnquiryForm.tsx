@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import type { ContactFormData } from "@/types/templates.types";
+import type { EnquiryFormData } from "@/types/templates.types";
 import { useDummySubmit } from "@/components/ui/useDummySubmit";
 import { Icon } from "@/components/ui/Icon";
 import { FormSuccess, Spinner } from "@/components/ui/FormSuccess";
@@ -49,7 +49,7 @@ const ServiceSelect = ({ icon, placeholder, options }: { icon: string; placehold
 };
 
 /** Contact form with a dummy submit: sending state, then a thank-you message in place of the button */
-export const ContactForm = ({ data, serviceOptions }: { data?: ContactFormData; serviceOptions: string[] }) => {
+export const EnquiryForm = ({ data, serviceOptions }: { data?: EnquiryFormData; serviceOptions: string[] }) => {
   const submit = useDummySubmit();
   if (!data) return null;
   const { fields } = data;
