@@ -74,11 +74,9 @@ export const HeroSection = ({ data }: { data?: HeroData }) => {
         {/* photo in a white trapezoid frame; the blue background stops behind its upper part */}
         <div data-reveal className="relative mx-auto mt-10 w-full max-w-[63.25rem] sm:mt-14 lg:mt-[5.9rem]">
           <div aria-hidden="true" className="absolute -bottom-px left-1/2 top-[28%] w-screen max-w-[120rem] -translate-x-1/2 bg-[var(--color-bg-main)]" />
-          <div className="relative drop-shadow-[0_1.125rem_1.875rem_var(--color-shadow-photo)]">
-            <div className="bg-[var(--color-white)] p-1.5 [clip-path:url(#heroFrameClip)] sm:p-2 lg:p-[0.65rem]">
-              <div className="relative aspect-[1012/544] overflow-hidden [clip-path:url(#heroFrameClip)]">
-                <Image src={data.image} alt={data.imageAlt} fill preload quality={90} sizes="(min-width: 1024px) 70vw, 100vw" className="object-cover" />
-              </div>
+          <div className="relative bg-[var(--color-white)] p-1.5 [clip-path:url(#heroFrameClip)] sm:p-2 lg:p-[0.65rem]">
+            <div className="relative aspect-[1012/544] overflow-hidden [clip-path:url(#heroFrameClip)]">
+              <Image src={data.image} alt={data.imageAlt} fill preload quality={90} sizes="(min-width: 1024px) 70vw, 100vw" className="object-cover" />
             </div>
           </div>
         </div>

@@ -41,11 +41,11 @@ export const WhySection = ({ data }: { data?: WhyData }) => {
           </ul>
         </div>
 
-        <div data-reveal className="relative mx-auto mt-5 w-full shrink-0 sm:max-w-[34rem] lg:mx-0 lg:mr-[1.9rem] lg:mt-[1.2rem] lg:w-[37.2rem] lg:max-w-none">
+        <div data-reveal className="relative mx-auto mt-5 w-full shrink-0 pr-3.5 pt-3 sm:max-w-[34rem] sm:pr-0 sm:pt-0 lg:mx-0 lg:mr-[1.9rem] lg:mt-[1.2rem] lg:w-[37.2rem] lg:max-w-none">
           {/* green rounded block peeking out at the top-right corner */}
           <span
             aria-hidden="true"
-            className="absolute -right-4 -top-4 h-[40%] w-[45%] rounded-[1.6rem] bg-gradient-to-br from-[var(--color-green-accent-from)] to-[var(--color-green-accent-to)] lg:-right-[1.7rem] lg:-top-[1.2rem] lg:h-[12.3rem] lg:w-[14.4rem] lg:rounded-[2.2rem]"
+            className="absolute right-0 top-0 h-[40%] w-[45%] rounded-[1.6rem] bg-gradient-to-br from-[var(--color-green-accent-from)] to-[var(--color-green-accent-to)] sm:-right-4 sm:-top-4 lg:-right-[1.7rem] lg:-top-[1.2rem] lg:h-[12.3rem] lg:w-[14.4rem] lg:rounded-[2.2rem]"
           />
           <div className="relative aspect-[37.2/34.5] overflow-hidden rounded-[1.25rem] lg:rounded-[1.4rem]">
             <Image src={data.image} alt={data.imageAlt} fill quality={90} sizes="(min-width: 1024px) 42vw, (min-width: 640px) 34rem, 100vw" className="object-cover object-[45%_center]" />
